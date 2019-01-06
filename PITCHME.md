@@ -1,8 +1,8 @@
-# Workshop Git
+# Workshop Git en Github
 
-HOGENT IT-lab, 2018-11-13
+E-quality
 
-Bert Van Vreckem <bert.vanvreckem@gmail.com>
+Jens Buysse <jens.buysse@gmail.com>
 
 +++
 
@@ -16,14 +16,33 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
 
 +++
 
+## `whoami`
+- Jens Buysse
+- *Lector ICT* Hogeschool Gent
+    - Professionele bachelor toegepaste informatica
+    - Android, PHP, Onderzoekstechnieken in R, stage en bachelorproef ...
+- *Software ontwikkelaar* 
+	- PHP, Wordpress, Yii2 ...
+
++++
+
+## `sudo cp bertvv && cp github education`
+De slides zijn gebaseerd op onder andere twee workshops van Bert Van Vreckem, collega aan de Hogeschool Gent.
+
+- [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
+- [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
+
+En op de officiële "Teacher training to master Git and GitHub"
+
+- [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
+- 
+ +++
+
 ## Agenda
 
-- CLI vs GUI
-- Hoe werkt Git?
-- Merge vs rebase
-- Samenwerken in team
-- Typische fouten rechtzetten
-- Ask Me Anything
+- Wat is git en wat is Github
+- Basics: Git Internals
+- 
 
 +++
 
