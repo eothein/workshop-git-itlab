@@ -152,6 +152,8 @@ Git is een tool dat je vooruitgang trackt in functie van de tijd
 ![](assets/img/versiolego.png)
 @snapend
 
++++
+
 ### Eenvoudige workflow (solo)
 
 Opstart:
