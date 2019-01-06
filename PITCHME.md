@@ -330,11 +330,6 @@ Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
 Date:   Sat Nov 15 14:47:46 2014 +0100
 
     README toegevoegd
-
-$ git log --pretty="format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d
-    %C(green)%an%C(reset), %C(cyan)%ar" --date=short --graph --all
-* 97deea3 2014-11-15 Added .gitignore (HEAD, master) Bert Van Vreckem, 22 minutes ago
-* aadfd67 2014-11-15 README toegevoegd Bert Van Vreckem, 2 hours ago
 ```
 
 +++
@@ -375,15 +370,165 @@ Zie: <https://github.com/bertvv/dotfiles/blob/master/.bash.d/aliases.sh>
 - Commit de aanpassingen
 
 ___
-
-
-
 ## Hoe werkt Git?
 
 - Visual Git cheat sheet: <http://ndpsoftware.com/git-cheatsheet.html#loc=stash;>
 - Visualizing Git Concepts with D3: <https://onlywei.github.io/explain-git-with-d3/>
 
 ---
+
+# Werken met Github
+
++++
+
+## Workflow
+
+@snap[midpoint, south]
+![Eenvoudige workflow voor één persoon](assets/workflow-remote.png)
+@snapend
+
+
++++
+
+## Github
+
+[https://github.com/](https://github.com/)
+
+* Bekendste hosting-provider voor Git repositories
+* Gratis voor open source
+
++++
+
+## Github account
+
+* Maak een Github-account aan
+    * koppel aan emailadres 
+
++++
+
+## Repository aanmaken
+
+Maak op Github een nieuwe repository aan (bv. `my_project`)
+
+* Evt. "Initialize this repository with a README"
+* Website wordt: `https://github.com/USER/PROJECT`
+* Repo url (https) wordt: `https://github.com/USER/PROJECT.git`
+* Repo url (**ssh**) wordt: `git@github.com:USER/PROJECT.git`
+
++++
+
+![Nieuw project aanmaken voor een team](assets/new-repo.png)
+
++++
+
+## Lokale kopie maken
+
+1. Klik groene knop "Clone or download", kopieer url
+2. Open commando-prompt (Git Bash)
+3. `git clone https://github.com/bertvv/my_project.git`
+
++++
+
+## Lokale kopie maken
+
+```console
+$ git clone https://github.com/bertvv/my_project.git
+Cloning into 'my_project'...
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (6/6), done.
+Receiving objects: 100% (9/9), done.
+remote: Total 9 (delta 0), reused 9 (delta 0)
+Checking connectivity... done.
+```
+
++++
+
+## Github workflow voor één persoon
+
+```bash
+$ git pull
+[bewerk bestanden]
+$ git status
+$ git add file1 file2
+$ git commit -m "Beschrijving van de wijzigingen"
+$ git push
+```
+
+- `pull`: Wijzigingen Github -> lokaal
+- `push`: Wijzigingen lokaal -> Github
+
+---
+
++++
+
+## Het kan ook anders
+
+Om een ​​nieuwe remote toe te voegen, gebruikt u de opdracht `git remote add` op de terminal in de directory waarin uw repository is opgeslagen.
+
+Het commando git remote add neemt twee argumenten:
+
+1. Een externe naam, bijvoorbeeld oorsprong
+2. Een externe URL, bijvoorbeeld https://github.com/user/repo.git
+
++++
+
+## Het kan ook anders
+```console
+# Set a new remote
+$ git remote add origin https://github.com/user/repo.git
+# Verify new remote
+$ git remote -v
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+```
+
++++
+### Oefening
+
+1. Genereer een repository - mag ook dezelfde zijn als in voorgaande oefening
+2. Maak een repository op Github
+3. Push het werk dat je gemaakt hebt naar de remote
+
+___
+
+# Werken in team
+
++++
+
+## Anderen toegang geven tot je repository
+
+* Klik rechts op **Settings**
+* In het menu links, klik op **Collaborators**
+* Voeg de gebruikersnamen toe van wie toegang moet krijgen
+
++++
+
+## Een project opzetten in GitHub
+
+* Eén persoon doet:
+    * Aanmaken nieuwe repository
+    * Optie voor creëren README + `.gitignore` aanvinken
+    * Teamleden toevoegen
+* Iedereen doet
+    * `git clone https://github.com/USER/PROJECT.git`
+
++++
+
+## Workflow: werken in een team
+
+* Haal laatste revisie binnen: `git pull origin master`
+* Maak wijzigingen: `git add`, `git commit`
+* Nogmaals: `git pull --rebase`
+* Naar centrale repository: `git push origin master`
+
+- `-u` is kort voor `--set-upstream`
+- 
+
+---
+
+
+
+
 
 ## Merge vs Rebase
 
