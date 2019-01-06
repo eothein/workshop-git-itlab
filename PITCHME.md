@@ -366,7 +366,7 @@ Zie: <https://github.com/bertvv/dotfiles/blob/master/.bash.d/aliases.sh>
 - Pas de readme.md file aan
 - Commit de aanpassingen
 
-___
+---
 
 ## Hoe werkt Git?
 
@@ -489,10 +489,13 @@ origin  https://github.com/user/repo.git (push)
 	2. Hoe verwijder je bestanden?
 	3. Wat doet `git log --stat`, `git log --pretty=oneline`
 	4. Wat doet het programma `gitk`
+
++++ 
+
 5. Maak een commit waar je bestanden vergeet. Hoe kan je dit aanpassen met `git commit --amend`
 6. Hoe kan je veranderingen in een getrackt bestand revoken (dus terug het originele bestand ophalen?) bv. met `git checkout -- <file>...`
 
-___
+---
 
 # Werken in team
 
@@ -525,12 +528,8 @@ ___
 * Naar centrale repository: `git push origin master`
 
 - `-u` is kort voor `--set-upstream`
-- 
 
 ---
-
-
-
 
 
 ## Merge vs Rebase
