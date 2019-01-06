@@ -20,9 +20,10 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
 - Jens Buysse
 - *Lector ICT* Hogeschool Gent
     - Professionele bachelor toegepaste informatica
-    - Android, PHP, Onderzoekstechnieken in R, stage en bachelorproef ...
+    - Android, Kotlin, Onderzoekstechnieken in R, stage en bachelorproef ...
+    - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
-	- PHP, Wordpress, Yii2 ...
+	- PHP, Wordpress, Yii2, Kotlin ...
 
 +++
 
@@ -36,16 +37,7 @@ En op de officiële "Teacher training to master Git and GitHub"
 
 - [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
 
-
  +++
-
-## Agenda
-
-- Wat is git en wat is Github
-- Basics: Git Internals
-- 
-
-+++
 
 ### Ik gebruik Git voor (bijna) alles
 
@@ -101,11 +93,10 @@ Tenminste, totdat je begrijpt wat je doet ...
 ---
 
 
-#Get started
+# Get started
 1. Registreer je voor een account op github.com. 
-2. Download, installeer en configureer git. (Voor Windows-gebruikers is Git voor Windows
-aanbevolen). 
-3. Configureer Git in je terminal om je te herkennen. Zie later.
+2. Download, installeer en configureer git. 
+3. Configureer Git in je terminal.
 
 eerst ...
 
@@ -120,6 +111,13 @@ eerst ...
 <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
 +++
+
+### Werk met SSH sleutels
+
+Volg de link en voer de stappen uit.
+
+<https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
+
 
 ### Git basisconfiguratie
 
@@ -162,8 +160,8 @@ $ git config --global --edit
 
 @snap[west span-50]
 
-* Je kan snapshots maken om zo op je stappen terug te keren
-* Je kan deze snapshots ook delen met anderen
+- Je kan snapshots maken om zo op je stappen terug te keren
+- Je kan deze snapshots ook delen met anderen
 
 @snapend
 
@@ -172,7 +170,7 @@ $ git config --global --edit
 @snapend
 
 +++
-### Een repository beheert the geschiedenis van je project
+### Een *repository* beheert the geschiedenis van je project
 
 * Elk project moet zijn eigen repository hebben
 	* *Dus Bv. geen Angular en Android project op dezelfde repo*
@@ -186,7 +184,6 @@ $ cd oefening
 $ ls -al
 ```
 of
-Opstart:
 
 - Repo aanmaken op Github, initialiseer met README
 - Clone with SSH: 
@@ -249,7 +246,7 @@ $ git commit -m "Beschrijving aanpassing"
 
 +++
 
-Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m optie. U kunt beter het bericht schrijven in ee teksteditor. 
+Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m optie. U kunt beter het bericht schrijven in een teksteditor. 
 
 [https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration](Git configuratie aanpassen.)
 
@@ -265,7 +262,7 @@ Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m o
 
 +++
 
-### Gebruik na elke stap `git status`
+### Vergelijken van werkplaatsen
 #### `git diff`
 
 - Vergelijkt staging met de working directory
@@ -273,7 +270,7 @@ Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m o
 
 +++
 
-### Gebruik na elke stap `git status`
+### Vergelijken van werkplaatsen
 #### `git diff --staged`
 
 - Vergelijkt staging met de repository directory
@@ -289,7 +286,7 @@ Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m o
 
 +++
 ### Commits moeten logisch geordend zijn
-Soms is de staging area soms iets ingewikkelder dan je in je workflow nodig hebt. Als je de staging area wilt overslaan, dan kan je met Git makkelijk de route inkorten.
+Soms is de staging area iets ingewikkelder dan je in je workflow nodig hebt. Als je de staging area wilt overslaan, dan kan je met git makkelijk de route inkorten.
 
 ```console
 $ git add -a
@@ -302,22 +299,22 @@ $ git add -a
 * Je kan (zo goed als) elke stap ongedaan maken!
 * Lokale wijzigingen aan `README.md` ongedaan maken:
 
-    ```bash
-    git checkout -- README.md
-    ```
+```bash
+git checkout -- README.md
+```
 
 * `README.md` opnieuw uit `staging` halen :
 
-    ```bash
-    git reset HEAD README.md
-    ```
+```bash
+git reset HEAD README.md
+```
 
 * `git status` herinnert telkens aan deze commando's!
 
 +++
 
 ## Historiek
-```none
+```console
 $ git log
 commit 97deea303754171c717291387af87e9b891f28fb
 Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
@@ -370,6 +367,7 @@ Zie: <https://github.com/bertvv/dotfiles/blob/master/.bash.d/aliases.sh>
 - Commit de aanpassingen
 
 ___
+
 ## Hoe werkt Git?
 
 - Visual Git cheat sheet: <http://ndpsoftware.com/git-cheatsheet.html#loc=stash;>
@@ -410,7 +408,7 @@ ___
 
 Maak op Github een nieuwe repository aan (bv. `my_project`)
 
-* Evt. "Initialize this repository with a README"
+* "Initialize this repository with a README"
 * Website wordt: `https://github.com/USER/PROJECT`
 * Repo url (https) wordt: `https://github.com/USER/PROJECT.git`
 * Repo url (**ssh**) wordt: `git@github.com:USER/PROJECT.git`
@@ -457,8 +455,6 @@ $ git push
 - `pull`: Wijzigingen Github -> lokaal
 - `push`: Wijzigingen lokaal -> Github
 
----
-
 +++
 
 ## Het kan ook anders
@@ -488,6 +484,13 @@ origin  https://github.com/user/repo.git (push)
 1. Genereer een repository - mag ook dezelfde zijn als in voorgaande oefening
 2. Maak een repository op Github
 3. Push het werk dat je gemaakt hebt naar de remote
+4. Speel eens met `reset` en de andere commando's.
+	1. Hoe verplaats je bestanden?
+	2. Hoe verwijder je bestanden?
+	3. Wat doet `git log --stat`, `git log --pretty=oneline`
+	4. Wat doet het programma `gitk`
+5. Maak een commit waar je bestanden vergeet. Hoe kan je dit aanpassen met `git commit --amend`
+6. Hoe kan je veranderingen in een getrackt bestand revoken (dus terug het originele bestand ophalen?) bv. met `git checkout -- <file>...`
 
 ___
 
