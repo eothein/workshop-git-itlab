@@ -215,7 +215,7 @@ $ touch readme.md
 $ git status
 $ git add reamdme.md
 ```
-@snap[midpoint]
+@snap[midpoint, south]
 ![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
 @snapend
 
@@ -227,7 +227,7 @@ $ git add reamdme.md
 ```console
 $ git commit -m "Beschrijving aanpassing"
 ```
-@snap[midpoint]
+@snap[midpoint, south]
 ![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
 @snapend
 
