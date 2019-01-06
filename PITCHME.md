@@ -143,7 +143,14 @@ $ git config --global --edit
 - stap terugzetten
 
 ---
+#Wat is git?
+@snap[west span-50]
+Git is een tool dat je vooruitgang trackt in functie van de tijd
+@snapend
 
+@snap[east span-50]
+![](assets/img/versiolego.png)
+@snapend
 
 ### Eenvoudige workflow (solo)
 
