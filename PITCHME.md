@@ -145,12 +145,28 @@ $ git config --global --edit
 
 ---
 # Wat is git?
++++
+
 @snap[west span-50]
-Git is een tool dat je vooruitgang trackt in functie van de tijd
+*Git* is een tool dat je vooruitgang trackt in functie van de tijd
 @snapend
 
 @snap[east span-50]
 ![](assets/versiolego.png)
+@snapend
+
++++
+
+## Git neemt snapshots
++++
+
+@snap[west span-50]
+- Je kan snapshots maken om zo op je stappen terug te keren
+- Je kan deze snapshots ook delen met anderen
+@snapend
+
+@snap[east span-50]
+![](assets/snapshot.png)
 @snapend
 
 +++
