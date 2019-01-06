@@ -144,7 +144,7 @@ $ git config --global --edit
 - stap terugzetten
 
 ---
-# Wat is git?
+# Wat is git - basics?
 +++
 
 @snap[west span-50]
@@ -157,12 +157,14 @@ $ git config --global --edit
 
 +++
 
-## Git neemt snapshots
+### Git neemt snapshots
 +++
 
 @snap[west span-50]
-- Je kan snapshots maken om zo op je stappen terug te keren
-- Je kan deze snapshots ook delen met anderen
+
+* Je kan snapshots maken om zo op je stappen terug te keren
+* Je kan deze snapshots ook delen met anderen
+
 @snapend
 
 @snap[east span-50]
@@ -170,28 +172,61 @@ $ git config --global --edit
 @snapend
 
 +++
+### Een repository beheert the geschiedenis van je project
 
-### Eenvoudige workflow (solo)
+* Elk project moet zijn eigen repository hebben
+	* *Dus Bv. geen Angular en Android project op dezelfde repo*
 
++++
+### Een repo aanmaken
+```console
+$ cd dirNaam
+$ git init oefening
+$ cd oefening
+$ ls -al
+```
+of
 Opstart:
 
 - Repo aanmaken op Github, initialiseer met README
 - Clone with SSH: `git clone git@github.com:user/repo.git`
 
+
 +++
 
+### Git is jouw bureau
+
+1. **Working directory**: waar je werkt en schrijft
+2. ***Staging area***: een kladversie klaar om te reviewen
+3. ***Repository***: finale versie, klaar om te archiveren
+
++++
+
+
 ### Eenvoudige workflow (solo)
+#### File aanmaken en toevoegen aan staging
 
 ```console
-[Bestanden bewerken]
-$ git add .
-$ git commit -m "Beschrijving aanpassingen"
-$ git push
+$ touch readme.md
+$ git status
+$ git add reamdme.md
 ```
 
 ![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
 
 +++
+
+### Eenvoudige workflow (solo)
+#### Commit maken
+```console
+$ git commit -m "Beschrijving aanpassing"
+```
+![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
+
+
++++
+
+
 
 ### Gebruik na elke stap `git status`
 
