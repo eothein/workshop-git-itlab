@@ -189,12 +189,16 @@ of
 Opstart:
 
 - Repo aanmaken op Github, initialiseer met README
-- Clone with SSH: `git clone git@github.com:user/repo.git`
+- Clone with SSH: 
+
+```console
+$ git clone git@github.com:user/repo.git
+```
 
 
 +++
 
-### Git is jouw bureau
+### `git` is jouw bureau
 
 1. **Working directory**: waar je werkt en schrijft
 2. ***Staging area***: een kladversie klaar om te reviewen
@@ -211,8 +215,10 @@ $ touch readme.md
 $ git status
 $ git add reamdme.md
 ```
-
+@snap[midpoint]
 ![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
+@snapend
+
 
 +++
 
@@ -221,11 +227,33 @@ $ git add reamdme.md
 ```console
 $ git commit -m "Beschrijving aanpassing"
 ```
+@snap[midpoint]
 ![Eenvoudige workflow voor één persoon](assets/workflow-solo.png)
+@snapend
 
 
 +++
+### Hoe schrijf je een `git commit` Message
+![Commit messages](assets/messages.png)
 
++++
+### Hoe schrijf je een `git commit` Message
+
+1. Scheid subject van body met een lege regel
+2. Beperk de onderwerpregel tot 50 tekens
+3. Begin met een hoofdletter voor het onderwerp
+4. Beëindig de onderwerpregel niet met een punt
+5. Gebruik de gebiedende wijs in de onderwerpregel
+6. Max body tekens: 72
+7. Gebruik body om uit te leggen wat en waarom en hoe (indien nodig)
+
++++
+
+Commit-berichten met een body zijn niet zo eenvoudig om te schrijven met de -m optie. U kunt beter het bericht schrijven in ee teksteditor. 
+
+[https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration](Git configuratie aanpassen.)
+
++++
 
 
 ### Gebruik na elke stap `git status`
@@ -237,7 +265,82 @@ $ git commit -m "Beschrijving aanpassing"
 
 +++
 
-### Aliases
+### Gebruik na elke stap `git status`
+#### `git diff`
+
+- Vergelijkt staging met de working directory
+- Geen output indien deze dezelfde zijn
+
++++
+
+### Gebruik na elke stap `git status`
+#### `git diff --staged`
+
+- Vergelijkt staging met de repository directory
+- Geen output indien deze dezelfde zijn
+
++++
+
+### Commits moeten logisch geordend zijn
+
+- ***Per feature 1 commit!***
+- Wat als je een rollback doet waar twee features inzitten, maar je moet er maar 1 van veranderen
+	- Tweede feature wordt dan ook gerollbackt.
+
++++
+### Commits moeten logisch geordend zijn
+Soms is de staging area soms iets ingewikkelder dan je in je workflow nodig hebt. Als je de staging area wilt overslaan, dan kan je met Git makkelijk de route inkorten.
+
+```console
+$ git add -a
+```
+
++++
+
+## Ctrl-Z!
+
+* Je kan (zo goed als) elke stap ongedaan maken!
+* Lokale wijzigingen aan `README.md` ongedaan maken:
+
+    ```bash
+    git checkout -- README.md
+    ```
+
+* `README.md` opnieuw uit `staging` halen :
+
+    ```bash
+    git reset HEAD README.md
+    ```
+
+* `git status` herinnert telkens aan deze commando's!
+
++++
+
+## Historiek
+```none
+$ git log
+commit 97deea303754171c717291387af87e9b891f28fb
+Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
+Date:   Sat Nov 15 16:50:20 2014 +0100
+
+    Added .gitignore
+
+commit aadfd674f5dec9205fde484a5d921041b256b135
+Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
+Date:   Sat Nov 15 14:47:46 2014 +0100
+
+    README toegevoegd
+
+$ git log --pretty="format:%C(yellow)%h %C(blue)%ad %C(reset)%s%C(red)%d
+    %C(green)%an%C(reset), %C(cyan)%ar" --date=short --graph --all
+* 97deea3 2014-11-15 Added .gitignore (HEAD, master) Bert Van Vreckem, 22 minutes ago
+* aadfd67 2014-11-15 README toegevoegd Bert Van Vreckem, 2 hours ago
+```
+
++++
+
+
+### Pro tip: Aliases
 
 Voeg toe aan `~/.bashrc`:
 
@@ -263,7 +366,17 @@ alias gs='git ls-tree -r -z --name-only HEAD | xargs -0 -n1 git blame --line-por
 
 Zie: <https://github.com/bertvv/dotfiles/blob/master/.bash.d/aliases.sh>
 
----
++++
+### Oefening: Maak je eigen repo
+
+- Maak je repo aan
+- Configureer zoals nodig
+- Pas de readme.md file aan
+- Commit de aanpassingen
+
+___
+
+
 
 ## Hoe werkt Git?
 
