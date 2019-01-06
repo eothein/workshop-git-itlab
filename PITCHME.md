@@ -101,17 +101,18 @@ Tenminste, totdat je begrijpt wat je doet ...
 ---
 
 
-### `git status` FTW!
+#Get started
+1. Registreer je voor een account op github.com. 
+2. Download, installeer en configureer git. (Voor Windows-gebruikers is Git voor Windows
+aanbevolen). 
+3. Configureer Git in je terminal om je te herkennen. Zie later.
 
-- huidige toestand
-- volgende stap
-- stap terugzetten
+eerst ...
 
-+++
 
 ### Werk met SSH sleutels
 
-- Zorg dat Git Bash geïnstalleerd is (Windows)
+- Zorg dat Git Bash geïnstalleerd is
 - Maak een SSH sleutelpaar aan (`ssh-keygen`)
 - Registreer publieke sleutel (`~/.ssh/id_rsa.pub`) op Github
 
@@ -134,6 +135,15 @@ $ git config --global --edit
 ```
 
 +++
+
+### `git status` FTW!
+
+- huidige toestand
+- volgende stap
+- stap terugzetten
+
+---
+
 
 ### Eenvoudige workflow (solo)
 
