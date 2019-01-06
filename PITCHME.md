@@ -35,7 +35,8 @@ De slides zijn gebaseerd op onder andere twee workshops van Bert Van Vreckem, co
 En op de officiële "Teacher training to master Git and GitHub"
 
 - [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
-- 
+
+
  +++
 
 ## Agenda
@@ -50,17 +51,11 @@ En op de officiële "Teacher training to master Git and GitHub"
 
 - [Scripts](https://github.com/bertvv/scripts), programmacode
 - Handleidingen, syllabi (LaTeX FTW!)
-- Presentaties ([Reveal.js](https://revealjs.com/#/)/[Gitpitch](https://gitpitch.com/))
+- Presentaties [Gitpitch](https://gitpitch.com/)
 - Documentatie/nota's ([Markdown](https://guides.github.com/features/mastering-markdown/))
 - Verspreiden/opvolgen studentenwerk
 - Samenwerken met collega's
-
-+++
-
-```console
-$ find ~ -type d -name '.git' | wc -l
-808
-```
+- ...
 
 +++
 
@@ -70,7 +65,7 @@ $ find ~ -type d -name '.git' | wc -l
 
 ### Alles kan hersteld worden
 
-(of toch zo goed als alles...)
+(of toch zo goed als alles ...)
 
 ---
 
@@ -82,17 +77,17 @@ Gebruik Git vanop de command line
 
 +++
 
-Tenminste, totdat je begrijpt wat je doet...
+Tenminste, totdat je begrijpt wat je doet ...
 
 +++
 
-### GUI
+### Gebruik van GUI
 
 - Verbergt complexiteit
 - Verbergt details
 - Beperkt mogelijkheden
 - Bemoeilijkt troubleshooting
-- **Je begrijpt niet wat je aan het doen bent**
+- **Vaak begrijp je niet wat je aan het doen bent**
 
 +++
 
@@ -103,7 +98,8 @@ Tenminste, totdat je begrijpt wat je doet...
 - Instructies zijn éénduidig en compact
 - Makkelijker reproduceerbaar
 
-+++
+---
+
 
 ### `git status` FTW!
 
