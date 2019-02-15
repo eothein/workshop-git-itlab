@@ -13,7 +13,7 @@ e-quality - jens.buysse@gmail.com
 @title[Contents]
 
 ### *There is more than one way to do it*
-@css[help](@fa[arrow-left] Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem)
+@css[help](Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem)
 
 
 
@@ -23,6 +23,7 @@ e-quality - jens.buysse@gmail.com
 ## `whoami`
 @snapend
 
+@snap[west span-50]
 - Jens Buysse
 - *Lector ICT* Hogeschool Gent
     - Professionele bachelor toegepaste informatica
@@ -30,7 +31,11 @@ e-quality - jens.buysse@gmail.com
     - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
 	- PHP, Wordpress, Yii2, Kotlin
+@snapend
 
+@snap[east span-50]
+![Jens](assets/jens.jpg)
+@snapend
 
 +++
 
@@ -95,7 +100,7 @@ En op de officiële "Teacher training to master Git and GitHub"
 
 +++
 
-Gebruik Git vanop de command line
+@css[tip](Gebruik Git vanop de command line)
 
 +++
 
