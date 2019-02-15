@@ -739,7 +739,7 @@ we kunnen een commit corrigeren door de "-amend" -optie te gebruiken bij een rep
 - Wat loopt er fout en hoe lossen we het op?
 
 ---
-+++
+
 #Oplossen van merge conflict
 
 
@@ -747,15 +747,21 @@ Merge conflicten treden op wanneer concurrerende wijzigingen worden aangebracht 
 
 
 +++
-## Competing line change merge conflict
+
+## Concurrende line changes
 
 ```
 $ git status
 ```
 
 1. Open text editor
-2. Als u het begin van het merge in uw bestand wilt zien, zoekt u in het bestand naar de conflictmarkering <<<<<<<. Wanneer u het bestand in uw teksteditor opent, ziet u de wijzigingen van de HEAD na <<<<<<< HEAD. Vervolgens zie je =======, wat je wijzigingen in de andere branch aangeeft, gevolgd door >>>>>>> BRANCH-NAME. 
+2. Begin van de mergeconflict: conflictmarkering `<<<<<<<`
+3. Wijzigingen van de HEAD na `<<<<<<< HEAD`
+4. `=======`, wat je wijzigingen in de andere branch aangeeft
+5.  gevolgd door `>>>>>>> BRANCH-NAME`
 
++++
+## Concurrende line changes
 ```
 If you have questions, please
 <<<<<<< HEAD
