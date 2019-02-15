@@ -653,6 +653,7 @@ De vraag is hoe we gewijzigde bestanden aan staging kunnen toevoegen en tegelijk
 ```
 $ git commit -a -m "Alles in één keer"
 ```
++++
 
 ## Tips and tricks <sup>2</sup>
 
