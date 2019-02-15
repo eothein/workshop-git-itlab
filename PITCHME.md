@@ -740,7 +740,7 @@ we kunnen een commit corrigeren door de "-amend" -optie te gebruiken bij een rep
 
 ---
 
-#Oplossen van merge conflict
+# Oplossen van merge conflict
 
 
 Merge conflicten treden op wanneer concurrerende wijzigingen worden aangebracht in dezelfde regel van een bestand, of wanneer één persoon een bestand bewerkt en een andere persoon hetzelfde bestand verwijdert.
@@ -755,10 +755,10 @@ $ git status
 ```
 
 1. Open text editor
-2. Begin van de mergeconflict: conflictmarkering `<<<<<<<`
-3. Wijzigingen van de HEAD na `<<<<<<< HEAD`
-4. `=======`, wat je wijzigingen in de andere branch aangeeft
-5.  gevolgd door `>>>>>>> BRANCH-NAME`
+2. Begin van de mergeconflict: conflictmarkering ```<<<<<<<```
+3. Wijzigingen van de HEAD na ```<<<<<<< HEAD```
+4. ```=======```, wat je wijzigingen in de andere branch aangeeft
+5.  gevolgd door ```>>>>>>> BRANCH-NAME```
 
 +++
 ## Concurrende line changes
@@ -770,10 +770,15 @@ open an issue
 ask your question in IRC.
 >>>>>>> branch-a
 ```
+
 +++
+
 ## Concurrende line changes
 
-3. Bepaal of u alleen de wijzigingen van uw commit wilt behouden, alleen de wijzigingen van de andere commit wilt behouden of een geheel nieuwe wijziging wilt aanbrengen. Verwijder de conflictmarkers <<<<<<<, =======, >>>>>>> en breng de gewenste wijzigingen aan in de uiteindelijke samenvoeging. 
+3. Bepaal of u alleen de wijzigingen van uw commit wilt behouden
+4. of  alleen de wijzigingen van de andere commit wilt behouden 
+5. of een geheel nieuwe wijziging wilt aanbrengen. 
+6. Verwijder de conflictmarkers en breng de gewenste wijzigingen aan in de uiteindelijke samenvoeging. 
 4. `git add .`
 5. `git commit -m "Resolved merge conflict by incorporating both suggestions."`
 
@@ -782,8 +787,6 @@ ask your question in IRC.
 
 +++
 
-
-+++
 ---
 
 # Branches
