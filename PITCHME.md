@@ -30,7 +30,7 @@ test
     - Android, Kotlin, Onderzoekstechnieken in R, stage en bachelorproef ...
     - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
-	- PHP, Wordpress, Yii2, Kotlin ... 
+	- PHP, Wordpress, Yii2, Kotlin
 @snapend
 
 
