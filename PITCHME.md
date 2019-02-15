@@ -164,7 +164,7 @@ $ git config --global --edit
 +++
 
 @snap[west span-50]
-*Git* is een tool die je vooruitgang trackt in functie van de tijd
+*Git* is een tool dat je vooruitgang trackt in functie van de tijd
 @snapend
 
 @snap[east span-50]
@@ -329,7 +329,7 @@ $ git commit
 #   * Use the body to explain what and why vs. how
 #   * Can use multiple lines with "-" or "*" for bullet points in body
 # --------------------
-``
+```
 +++
 
 
