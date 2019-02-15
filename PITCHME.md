@@ -41,7 +41,7 @@ Feedback op deze workshop is welkom!
 
 +++
 
-## `sudo cp bertvv && cp github education`
+### `sudo cp bertvv && cp github education`
 De slides zijn gebaseerd op onder andere twee workshops van Bert Van Vreckem, collega aan de Hogeschool Gent.
 
 - [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
