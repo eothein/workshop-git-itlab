@@ -790,6 +790,8 @@ ask your question in IRC.
 ---
 
 # Branches
++++
+
 
 
 @snap[west span-60]
@@ -826,13 +828,13 @@ Date:   Sun Jan 6 15:48:51 2019 +0100
 <http://git-school.github.io/visualizing-git/>
 
 +++
-### Pull verstaan
+### Pull verstaan = fetch + merge
 
 - Pull haalt eerst de commits en slaat 
 ze lokaal op.
-- Voegt ze samen en, plaatst ze samen in de staging en
+- Voegt ze samen en plaatst ze samen in de staging en
 maakt een nieuwe commit met twee ouders.
-- Samenvoegen werkt de actieve vertakking bij tot punt
+- Merging werkt de actieve vertakking bij tot punt
 van de nieuwe samenvoeg commit
 - Je ziet de nieuwe commits weerspiegeld in je
 lokaal project wanneer je `git log` uitvoert.
@@ -851,11 +853,11 @@ checkout <branchname>`).
 in de readme.
 6. Sla op, dan commit, sluit dan af.
 7. Toont het bestand je eerste planeet? Of de tweede?
+8. Wat gebeurt er als je naar de master branch terug gaat?
 
 
 ---
 
----
 ## Merge vs Rebase
 
 <https://onlywei.github.io/explain-git-with-d3/>
@@ -883,9 +885,37 @@ Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasin
 +++
 
 ###Merge
-![Forked Repo](assets/merge.svg)
+![Merged Repo](assets/merge.svg)
 
 Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
++++
+###  Reb	ase
+```
+git checkout feature
+git rebase master
+```
+Dit verplaatst de volledige branch op de punt van de master, waarbij alle nieuwe commits effectief in de master worden opgenomen. De projectgeschiedenis wordt door rebasen opnieuw geschreven door voor elke commit in de oorspronkelijke tak gloednieuwe commits te maken.
++++
+### Rebase
+![Forked Repo](assets/forkedcommit.svg)
+
+Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
++++
+### Rebase
+![Forked Repo](assets/rebase.svg)
+
+Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
++++
+### Golden rule of rebase
+De gouden regel van git rebase is om het nooit te gebruiken op publieke locaties.
+
+![Forked Repo](assets/goldenrule.svg)
+
+Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
 
 +++
 
@@ -899,7 +929,7 @@ $ git pull --rebase
 [Eventuele conflicten oplossen]
 $ git push
 ```
-
+ git pull --rebase = git fetch + rebase
 +++
 
 ### Conflicten oplossen
