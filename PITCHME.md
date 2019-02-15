@@ -67,6 +67,10 @@ En op de officiële "Teacher training to master Git and GitHub"
 
 ### Regelmatig repo's om zeep geholpen
 
+@snap[east span-50]
+![](assets/broken.jpeg)
+@snapend
+
 +++
 
 ### Avid user of stackoverlfow ;)
@@ -394,19 +398,19 @@ git reset HEAD README.md
 +++
 
 ## Historiek
+```
+git log
+```
+
 ```console
-$ git log
-commit 97deea303754171c717291387af87e9b891f28fb
-Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
-Date:   Sat Nov 15 16:50:20 2014 +0100
+commit 318f763a52c7987eedb3e27f38e47d6c8f5f7762
+Author: eothein <jens.buysse@gmail.com>
+Date:   Fri Feb 15 10:14:21 2019 +0100
 
-    Added .gitignore
+    [feat] Add tips and tricks for commit messages
 
-commit aadfd674f5dec9205fde484a5d921041b256b135
-Author: Bert Van Vreckem <bert.vanvreckem@gmail.com>
-Date:   Sat Nov 15 14:47:46 2014 +0100
-
-    README toegevoegd
+    https://gist.github.com/zakkak/7e06725ebd1336bfebebe254de3de825
+    https://help.github.com/articles/associating-text-editors-with-git/
 ```
 
 +++
@@ -439,12 +443,29 @@ alias gs='git ls-tree -r -z --name-only HEAD | xargs -0 -n1 git blame --line-por
 Zie: <https://github.com/bertvv/dotfiles/blob/master/.bash.d/aliases.sh>
 
 +++
+### Quiz
+Wat doen de volgende commando's
+
+* ```git config --global user.name "Sam Smith"```
+* ```git init ```
+* ```git add <filename>```
+* ```git commit -m "Commit message" ```
+* ```git push origin master ```
+* ```git status ```
+* ```git diff ```
+* ```git checkout -- <filename>```
+
+
+
++++
 ### Oefening: Maak je eigen repo
 
 - Maak je repo aan
 - Configureer zoals nodig
 - Pas de readme.md file aan
 - Commit de aanpassingen
+- Maak wat aanpassingen aan de readme file, commit ze
+- Maak ook wat aanpassingen en annuleer ze in de staging, working tree
 
 ---
 
