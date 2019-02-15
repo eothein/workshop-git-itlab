@@ -1,4 +1,4 @@
----?image=assets/img/nature.jpg
+---?image=assets/nature.jpg
 @title[Workshop git and Github]
 
 @snap[north headline span-80]
