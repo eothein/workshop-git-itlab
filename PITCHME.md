@@ -2,11 +2,11 @@
 @title[Workshop git and Github]
 
 @snap[north headline span-80]
-@css[heading](E-quality)
+@css[heading](Workshop git and Github)
 @snapend
 
 @snap[south byline]
-jens.buysse@gmail.com
+e-quality - jens.buysse@gmail.com
 @snapend
 
 ---
