@@ -770,6 +770,8 @@ open an issue
 ask your question in IRC.
 >>>>>>> branch-a
 ```
++++
+## Concurrende line changes
 
 3. Bepaal of u alleen de wijzigingen van uw commit wilt behouden, alleen de wijzigingen van de andere commit wilt behouden of een geheel nieuwe wijziging wilt aanbrengen. Verwijder de conflictmarkers <<<<<<<, =======, >>>>>>> en breng de gewenste wijzigingen aan in de uiteindelijke samenvoeging. 
 4. `git add .`
