@@ -10,10 +10,13 @@ e-quality - jens.buysse@gmail.com
 @snapend
 
 ---
+@title[Contents]
 
-*There is more than one way to do it*
+### *There is more than one way to do it*
+@css[help](@fa[arrow-left] Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem)
 
-Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem
+
+
 
 +++
 @snap[north]
