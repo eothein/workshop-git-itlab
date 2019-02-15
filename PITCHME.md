@@ -24,6 +24,7 @@ e-quality - jens.buysse@gmail.com
 @snapend
 
 @snap[west span-50]
+
 - Jens Buysse
 - *Lector ICT* Hogeschool Gent
     - Professionele bachelor toegepaste informatica
@@ -31,6 +32,7 @@ e-quality - jens.buysse@gmail.com
     - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
 	- PHP, Wordpress, Yii2, Kotlin
+
 @snapend
 
 @snap[east span-50]
