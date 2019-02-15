@@ -1,11 +1,10 @@
-# Workshop Git en Github
+---?image=assets/nature.jpg @title[Workshop Git en Github]
 
-E-quality
+@snap[north headline span-80] @css[heading](Jens Buysse) @snapend
 
-Jens Buysse <jens.buysse@gmail.com>
+@snap[south byline] e-quality  - jens.buysse@gmail.com @snapend
 
-+++
-
+---
 @color[#FF0000](Heb je een vraag? Onderbreek mij!)
 
 +++
