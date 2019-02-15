@@ -19,6 +19,7 @@ Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vrecke
 ## `whoami`
 
 @snap[west]
+
 - Jens Buysse
 - *Lector ICT* Hogeschool Gent
     - Professionele bachelor toegepaste informatica
@@ -26,6 +27,7 @@ Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vrecke
     - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
 	- PHP, Wordpress, Yii2, Kotlin ...
+ 
 @snapend
 
 @snap[east]
