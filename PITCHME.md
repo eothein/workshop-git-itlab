@@ -15,8 +15,13 @@ Jens Buysse <jens.buysse@gmail.com>
 Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem
 
 +++
-
+@snap[north]
 ## `whoami`
+@snapend
+
+@snap[east]
+test
+@snapend
 
 @snap[west]
 - Jens Buysse
@@ -28,9 +33,7 @@ Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vrecke
 	- PHP, Wordpress, Yii2, Kotlin ... 
 @snapend
 
-@snap[east]
-test
-@snapend
+
 +++
 
 ## `whoami`
