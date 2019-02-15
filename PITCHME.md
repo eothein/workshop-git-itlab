@@ -1,13 +1,15 @@
----?image=assets/nature.jpg @title[Workshop Git en Github]
+---?image=assets/img/kitchen-sink.jpg
+@title[Workshop git and Github]
 
-@snap[north headline span-80] @css[heading](Jens Buysse) @snapend
+@snap[north headline span-80]
+@css[heading](E-quality)
+@snapend
 
-@snap[south byline] e-quality  - jens.buysse@gmail.com @snapend
+@snap[south byline]
+jens.buysse@gmail.com
+@snapend
 
 ---
-@color[#FF0000](Heb je een vraag? Onderbreek mij!)
-
-+++
 
 *There is more than one way to do it*
 
