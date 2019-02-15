@@ -64,8 +64,9 @@ En op de officiële "Teacher training to master Git and GitHub"
 - ...
 
 +++
-
+@snap[west span-50]
 ### Regelmatig repo's om zeep geholpen
+@snapend
 
 @snap[east span-50]
 ![](assets/broken.jpeg)
@@ -115,7 +116,7 @@ Tenminste, totdat je begrijpt wat je doet ...
 ---
 
 
-# Get started
+# Getting started
 1. Registreer je voor een account op github.com. 
 2. Download, installeer en configureer git. 
 3. Configureer Git in je terminal.
@@ -155,6 +156,67 @@ of
 $ git config --global --edit
 ```
 
+Output (mss wat veel in dit geval)
+
+```
+core.excludesfile=~/.gitignore
+core.legacyheaders=false
+core.quotepath=false
+mergetool.keepbackup=true
+push.default=simple
+color.ui=auto
+color.interactive=auto
+repack.usedeltabaseoffset=true
+alias.s=status
+alias.a=!git add . && git status
+alias.au=!git add -u . && git status
+alias.aa=!git add . && git add -u . && git status
+alias.c=commit
+alias.cm=commit -m
+alias.ca=commit --amend
+alias.ac=!git add . && git commit
+alias.acm=!git add . && git commit -m
+alias.l=log --graph --all --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
+alias.ll=log --stat --abbrev-commit
+alias.lg=log --color --graph --pretty=format:'%C(bold white)%h%Creset -%C(bold green)%d%Creset %s %C(bold green)(%cr)%Creset %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+alias.llg=log --color --graph --pretty=format:'%C(bold white)%H %d%Creset%n%s%n%+b%C(bold blue)%an <%ae>%Creset %C(bold green)%cr (%ci)' --abbrev-commit
+alias.d=diff
+alias.master=checkout master
+alias.spull=svn rebase
+alias.spush=svn dcommit
+alias.alias=!git config --list | grep 'alias\.' | sed 's/alias\.\([^=]*\)=\(.*\)/\1\	 => \2/' | sort
+include.path=~/.gitcinclude
+include.path=.githubconfig
+include.path=.gitcredential
+diff.exif.textconv=exif
+credential.helper=osxkeychain
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+filter.lfs.clean=git-lfs clean -- %f
+user.name=eothein
+user.email=jens.buysse@gmail.com
+credential.helper=!/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/jre/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/2.0.3/libexec/git-credential-manager-2.0.3.jar
+core.editor=mate -w
+commit.template=.gitmessage
+color.ui=true
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+remote.origin.url=git@github.com:eothein/workshop-git-itlab.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master```
+
++++
+### Controleren of alles juist is
+
+```git config --list```
+
+
 +++
 
 ### `git status` FTW!
@@ -168,7 +230,7 @@ $ git config --global --edit
 +++
 
 @snap[west span-50]
-*Git* is een tool dat je vooruitgang trackt in functie van de tijd
+*Git* is een tool die je vooruitgang trackt in functie van de tijd
 @snapend
 
 @snap[east span-50]
@@ -182,7 +244,9 @@ $ git config --global --edit
 
 @snap[west span-50]
 
+
 - Je kan snapshots maken om zo op je stappen terug te keren
+
 - Je kan deze snapshots ook delen met anderen
 
 @snapend
@@ -339,10 +403,12 @@ $ git commit
 
 ### Gebruik na elke stap `git status`
 
-- gewijzigde/toegevoegde bestanden: rood
-- bestanden in "staging": groen
-- commando voor de volgende stap
-- commando om stap ongedaan te maken
+- gewijzigde/toegevoegde bestanden: <span style="color:red">rood</span>
+- bestanden in "staging": <span style="color:green">groen<span>
+
+
+* info over commando voor de volgende stap
+* info over commando om stap ongedaan te maken
 
 +++
 
@@ -370,10 +436,10 @@ $ git commit
 
 +++
 ### Commits moeten logisch geordend zijn
-Soms is de staging area iets ingewikkelder dan je in je workflow nodig hebt. Als je de staging area wilt overslaan, dan kan je met git makkelijk de route inkorten.
+Er is een probleem met de "git add". commando. Omdat we momenteel in de hoofdmap werken, zal "git add". alleen bestanden toevoegen toe die zich in de hoofdmap bevinden. Maar de root-directory kan veel andere mappen met bestanden bevatten. Hoe kunnen we bestanden van die andere mappen plus de bestanden in de root-directory toevoegen aan het verzamelgebied? Git biedt de onderstaande opdracht:
 
 ```console
-$ git add -a
+$ git add -All
 ```
 
 +++
@@ -578,6 +644,34 @@ $ git remote -v
 origin  https://github.com/user/repo.git (fetch)
 origin  https://github.com/user/repo.git (push)
 ```
+
+## Tips and tricks <sup>1</sup>
+
+
+De vraag is hoe we gewijzigde bestanden aan staging kunnen toevoegen en tegelijkertijd kunnen commiten. Git biedt de volgende super opdracht:
+
+```
+$ git commit -a -m "Alles in één keer"
+```
+
+## Tips and tricks <sup>2</sup>
+
+Er zullen momenten zijn waarop je spijt zult hebben van het committen. Laten we zeggen dat je tien bestanden hebt aangepast, maar er slechts negen hebt gecommit. Hoe kun je dat resterende bestand toevoegen aan de laatste commit? En hoe kun je een bestand aanpassen als je het al hebt vastgelegd? Er zijn twee manieren om terug te keren. Ten eerste kun je de commit ongedaan maken:
+
+```
+ git reset --soft HEAD^
+```
+
+
+"reset" is het tegenovergestelde van de opdracht "add". Deze keer vertelt "reset" Git om de commit ongedaan te maken. Wat volgt op "reset" is de optie "--soft". De "--soft" optie betekent dat de commit is geannuleerd en wordt verplaatst vóór HEAD. U kunt nu een ander bestand toevoegen aan de stagging en committen, of u kunt bestanden wijzigen en vastleggen.
++++
+## Tips and tricks <sup>3</sup>
+
+```
+$ git add file-i-forgot-to-add.html
+$ git commit --amend -m "Add the remaining file"
+```
+we kunnen een commit corrigeren door de "-amend" -optie te gebruiken bij een repository. Voeg gewoon het overgebleven bestand toe aan de staging.
 
 +++
 ### Oefening
