@@ -12,11 +12,13 @@ Jens Buysse <jens.buysse@gmail.com>
 
 *There is more than one way to do it*
 
-Wat volgt zijn mijn persoonlijke aanbevelingen
+Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem
 
 +++
 
 ## `whoami`
+
+@snap[west]
 - Jens Buysse
 - *Lector ICT* Hogeschool Gent
     - Professionele bachelor toegepaste informatica
@@ -24,7 +26,11 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
     - AI en optimalisatietechnieken
 - *Software ontwikkelaar* 
 	- PHP, Wordpress, Yii2, Kotlin ...
+@snapend
 
+@snap[east]
+test
+@snapend
 +++
 
 ## `whoami`
