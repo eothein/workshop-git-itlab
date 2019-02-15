@@ -748,7 +748,7 @@ Merge conflicten treden op wanneer concurrerende wijzigingen worden aangebracht 
 
 +++
 
-## Concurrende line changes
+## Concurerende line changes
 
 ```
 $ git status
@@ -761,7 +761,7 @@ $ git status
 5.  gevolgd door ```>>>>>>> BRANCH-NAME```
 
 +++
-## Concurrende line changes
+## Concurerende line changes
 ```
 If you have questions, please
 <<<<<<< HEAD
@@ -773,7 +773,7 @@ ask your question in IRC.
 
 +++
 
-## Concurrende line changes
+## Concurerende line changes
 
 3. Bepaal of u alleen de wijzigingen van uw commit wilt behouden
 4. of  alleen de wijzigingen van de andere commit wilt behouden 
@@ -791,8 +791,6 @@ ask your question in IRC.
 
 # Branches
 +++
-
-
 
 @snap[west span-60]
 - "Master" is de standaard branch, het is een naamgevingconventie.
@@ -1022,11 +1020,11 @@ $ git status
 ---
 
 
-## Samenwerken in team
+# Samenwerken in team
 
 +++
 
-### Trunk based development
+## Trunk based development
 
 - Geen branches op centrale repo!
 - Toegepast bij Continuous Integration/Delivery/Deployment
@@ -1034,12 +1032,70 @@ $ git status
 
 +++
 
-### Topic branches
+### Feature branches
 
 - Software met discrete releases
 - Master is altijd "proper"
 - Complexer!
 - Mogelijke bottlenecks
+
++++
+![Feature branch](assets/feature.png)
+
++++
+### Main branches
+* master : poductiewaardig
+* develop : laatste aanpassingen voor de volgende release
+
++++
+### Ondersteunende branches
+
+* feature
+	* takt af van develop
+	* bevatten nieuwe features van de software
+	* `git checkout -b myfeature develop`
+
+```
+$ git checkout develop
+Switched to branch 'develop'
+$ git merge --no-ff myfeature
+Updating ea1b82a..05e9557
+(Summary of changes)
+$ git branch -d myfeature
+Deleted branch myfeature (was 05e9557).
+$ git push origin develop
+```
+
++++
+### --no-ff
+
+![No-ff](assets/noff.png)
++++
+
+### Release en hotfix
+
+ release
+	* takt af van develop of master
+	* voorbereiding voor nieuwe productierelease
+	* `git checkout -b release-1.2 develop
+
+	
++++
+
+```
+$ git checkout master
+Switched to branch 'master'
+$ git merge --no-ff release-1.2
+Merge made by recursive.
+(Summary of changes)
+$ git tag -a 1.2
+$ git checkout develop
+Switched to branch 'develop'
+$ git merge --no-ff release-1.2
+Merge made by recursive.
+(Summary of changes)
+$ git branch -d release-1.2
+```
 
 +++
 
@@ -1052,7 +1108,7 @@ $ git status
 
 ---
 
-## Tips, aanbevelingen
+# Tips, aanbevelingen
 
 +++
 
