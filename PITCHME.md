@@ -657,12 +657,17 @@ $ git commit -a -m "Alles in één keer"
 
 ## Tips and tricks <sup>2</sup>
 
-Er zullen momenten zijn waarop je spijt zult hebben van het committen. Laten we zeggen dat je tien bestanden hebt aangepast, maar er slechts negen hebt gecommit. Hoe kun je dat resterende bestand toevoegen aan de laatste commit? En hoe kun je een bestand aanpassen als je het al hebt vastgelegd? Er zijn twee manieren om terug te keren. Ten eerste kun je de commit ongedaan maken:
+Er zullen momenten zijn waarop je spijt zult hebben van het committen. 
+
+* Hoe kun je dat resterende bestand toevoegen aan de laatste commit? 
+* * En hoe kun je een bestand aanpassen als je het al hebt vastgelegd? 
+
+Er zijn twee manieren om terug te keren. Ten eerste kun je de commit ongedaan maken:
 
 ```
  git reset --soft HEAD^
 ```
-
++++
 
 "reset" is het tegenovergestelde van de opdracht "add". Deze keer vertelt "reset" Git om de commit ongedaan te maken. Wat volgt op "reset" is de optie "--soft". De "--soft" optie betekent dat de commit is geannuleerd en wordt verplaatst vóór HEAD. U kunt nu een ander bestand toevoegen aan de stagging en committen, of u kunt bestanden wijzigen en vastleggen.
 +++
@@ -725,6 +730,52 @@ we kunnen een commit corrigeren door de "-amend" -optie te gebruiken bij een rep
 
 - `-u` is kort voor `--set-upstream`
 
+
++++
+## Oefening
+
+- Voeg mensen toe aan je repository
+- Voeg naar hartelust bestanden toe aan elkaar's repo
+- Wat loopt er fout en hoe lossen we het op?
+
+---
++++
+#Oplossen van merge conflict
+
+
+Merge conflicten treden op wanneer concurrerende wijzigingen worden aangebracht in dezelfde regel van een bestand, of wanneer één persoon een bestand bewerkt en een andere persoon hetzelfde bestand verwijdert.
+
+
++++
+## Competing line change merge conflict
+
+```
+$ git status
+```
+
+1. Open text editor
+2. Als u het begin van het merge in uw bestand wilt zien, zoekt u in het bestand naar de conflictmarkering <<<<<<<. Wanneer u het bestand in uw teksteditor opent, ziet u de wijzigingen van de HEAD na <<<<<<< HEAD. Vervolgens zie je =======, wat je wijzigingen in de andere branch aangeeft, gevolgd door >>>>>>> BRANCH-NAME. 
+
+```
+If you have questions, please
+<<<<<<< HEAD
+open an issue
+=======
+ask your question in IRC.
+>>>>>>> branch-a
+```
+
+3. Bepaal of u alleen de wijzigingen van uw commit wilt behouden, alleen de wijzigingen van de andere commit wilt behouden of een geheel nieuwe wijziging wilt aanbrengen. Verwijder de conflictmarkers <<<<<<<, =======, >>>>>>> en breng de gewenste wijzigingen aan in de uiteindelijke samenvoeging. 
+4. `git add .`
+5. `git commit -m "Resolved merge conflict by incorporating both suggestions."`
+
+
+[source](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+
++++
+
+
++++
 ---
 
 # Branches
@@ -792,9 +843,38 @@ in de readme.
 
 
 ---
+
+---
 ## Merge vs Rebase
 
 <https://onlywei.github.io/explain-git-with-d3/>
+
+Git rebase doet hetzelfde als  git merge. Beide opdrachten zijn ontworpen om wijzigingen van de ene branche in een andere branche te integreren - ze doen het gewoon op heel verschillende manieren.
+
++++
+### Merge
+
+```
+git checkout feature
+git merge master
+
+```
+
+- Dit creëert een nieuwe "merge commit" in de feature branch die de geschiedenis van beide branches met elkaar verbindt.
+- Mergen is leuk omdat het een niet-destructieve operatie is. De bestaande takken zijn op geen enkele manier veranderd.
+
++++
+###Merge
+![Forked Repo](assets/forkedcommit.svg)
+
+Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+
++++
+
+###Merge
+![Forked Repo](assets/merge.svg)
+
+Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 +++
 
@@ -899,6 +979,7 @@ $ git status
 ```
 
 ---
+
 
 ## Samenwerken in team
 
