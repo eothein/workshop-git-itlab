@@ -30,7 +30,7 @@ Volg de link en voer de stappen uit.
 
 ### Git basic configuration
 
-@code[bash](src/gettingstarted/config.sh)
+@code[bash](assets/src/gettingstarted/config.sh)
 
 or
 
