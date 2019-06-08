@@ -26,6 +26,7 @@ Volg de link en voer de stappen uit.
 
 <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
++++
 
 ### Git basic configuration
 
@@ -36,6 +37,7 @@ or
 ```console
 $ git config --global --edit
 ```
++++
 
 Output (probably a bit large)
 
