@@ -1,7 +1,6 @@
 +++
-@snap[north]
 ## `whoami` - Jens Buysse
-@snapend
+
 
 @snap[west span-50]
 - **ICT profesor** University College Ghent
@@ -18,7 +17,7 @@
 
 +++
 
-## `whoami`
+## `whoami` - Jens Buysse
 
 @fa[twitter] [@jensbuy](https://twitter.com/jensbuy)
 
@@ -28,17 +27,17 @@
 
 @fa[envelope] [jens.buysse@gmail.com](mailto:jens.buysse@gmail.com)
 
-Feedback is more than welcome!
+@css[help](Feedback is more than welcome!)
 
 +++
 
 ### `sudo cp bertvv && cp github education`
-The slides are based on, among other things, two workshops by Bert Van Vreckem, a colleague at the Hogeschool Gent.
+@css[brand](The slides are based on, among other things, two workshops by Bert Van Vreckem, a colleague at the Hogeschool Gent.)
 
 - [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
 
 
-And on the official "Teacher training to master Git and GitHub"
+@css[brand](And on the official "Teacher training to master Git and GitHub")
 
 - [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
 

@@ -31,18 +31,14 @@ Volg de link en voer de stappen uit.
 
 ### Git basic configuration
 
-@snap[west span-60]
 @code[bash zoom-07](assets/src/gettingstarted/config.sh)
-@snapend
-
-@snap[east span-40]
 
 or short 
 
 ```console
 git config --global --edit
 ```
-@snapend
+
 
 +++
 
