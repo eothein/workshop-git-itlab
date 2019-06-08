@@ -5,14 +5,14 @@
 
 @snap[west span-50]
 
-- Jens Buysse
-- *Lector ICT* Hogeschool Gent
-    - Professionele bachelor toegepaste informatica
-    - Android, Kotlin, Onderzoekstechnieken in R, stage en bachelorproef ...
-    - AI en optimalisatietechnieken
-- *Software ontwikkelaar* 
-	- PHP, Wordpress, Yii2, Kotlin
 
+- Jens Buysse
+- **ICT profesor** University College Ghent
+    - Professional Bachelor of Applied Computer Science
+    - Android, Kotlin, Research techniques in R, internship and bachelor thesis ...
+    - AI and optimization techniques
+- **Software developer**
+- PHP, Wordpress, Yii2, Kotlin
 @snapend
 
 @snap[east span-50]
@@ -31,39 +31,42 @@
 
 @fa[envelope] [jens.buysse@gmail.com](mailto:jens.buysse@gmail.com)
 
-Feedback op deze workshop is welkom!
+Feedback is more than welcome!
 
 +++
 
 ### `sudo cp bertvv && cp github education`
-De slides zijn gebaseerd op onder andere twee workshops van Bert Van Vreckem, collega aan de Hogeschool Gent.
+The slides are based on, among other things, two workshops by Bert Van Vreckem, a colleague at the Hogeschool Gent.
 
 - [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
-- [https://github.com/bertvv/git-workshop-nl](https://github.com/bertvv/git-workshop-nl)
 
-En op de officiële "Teacher training to master Git and GitHub"
+
+And on the official "Teacher training to master Git and GitHub"
 
 - [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
 
  +++
 
-### Ik gebruik Git voor (bijna) alles
+###I use Git for (almost) everything
 
-- [Scripts](https://github.com/bertvv/scripts), programmacode
-- Handleidingen, syllabi (LaTeX FTW!)
-- Presentaties [Gitpitch](https://gitpitch.com/)
-- Documentatie/nota's ([Markdown](https://guides.github.com/features/mastering-markdown/))
-- Verspreiden/opvolgen studentenwerk
-- Samenwerken met collega's
+
+- [Scripts] (https://github.com/bertvv/scripts), program code
+- Manuals, syllabi (LaTeX FTW!)
+- Presentations [Gitpitch] (https://gitpitch.com/)
+- Documentation / notes ([Markdown] (https://guides.github.com/features/mastering-markdown/))
+- Spreading / monitoring student work
+- Collaborate with colleagues
 - ...
 
+
 +++
+
 @snap[west span-50]
-### Regelmatig repo's om zeep geholpen
+### Destroyer of repo's
 @snapend
 
 @snap[east span-50]
-![](assets/broken.jpeg)
+![](assets/img/broken.jpeg)
 @snapend
 
 +++
@@ -72,8 +75,8 @@ En op de officiële "Teacher training to master Git and GitHub"
 
 +++
 
-### Alles kan hersteld worden
+### Everything can be restored
 
-(of toch zo goed als alles ...)
+(or as good as anything ...)
 
 ---
