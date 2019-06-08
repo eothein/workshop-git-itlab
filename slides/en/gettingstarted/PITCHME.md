@@ -1,5 +1,5 @@
 +++ 
-# Getting started
+@[headline](Getting started)
 
 1. Register for an account on github.com.
 2. Download, install and configure git.
@@ -11,9 +11,9 @@ But first ...
 
 ### Work SSH keys
 
-- Make sure Git Bash is installed
-- Create an SSH key pair (`ssh-keygen`)
-- Register public key (`~ / .ssh / id_rsa.pub`) on Github
+1. Make sure Git Bash is installed
+2. Create an SSH key pair (`ssh-keygen`)
+3. Register public key (`~/ssh/id_rsa.pub`) on Github
 
 
 <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
@@ -51,7 +51,9 @@ git config --global --edit
 +++
 ### Controleren of alles juist is
 
-```git config --list```
+```console
+git config --list
+```
 
 
 +++
