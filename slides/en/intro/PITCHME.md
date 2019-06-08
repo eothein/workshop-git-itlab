@@ -1,19 +1,12 @@
 +++
 ## `whoami` - Jens Buysse
 
-
-@snap[west span-50]
 - **ICT profesor** University College Ghent
     - Professional Bachelor of Applied Computer Science
     - Android, Kotlin, Research techniques in R, internship and bachelor thesis ...
     - AI and optimization techniques
 - **Software developer**
 - PHP, Wordpress, Yii2, Kotlin
-@snapend
-
-@snap[east span-50]
-![Jens](assets/img/jens.jpg)
-@snapend
 
 +++
 
@@ -43,7 +36,7 @@
 
 +++
 
-###I use Git for (almost) everything
+### I use Git for (almost) everything
 
 
 - [Scripts] (https://github.com/bertvv/scripts), program code
@@ -75,4 +68,3 @@
 
 (or as good as anything ...)
 
----

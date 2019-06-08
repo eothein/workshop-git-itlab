@@ -2,15 +2,15 @@
 
 +++
 
-@css[tip](Use Git from the command line)
+@css[help](Use Git from the command line)
 
 +++
 
-At least, until you understand what you are doing
+@css[tip](At least, until you understand what you are doing)
 
 +++
 
-### Gebruik van GUI
+### Using a GUI
 
 - Hides complexity
 - Hides details
