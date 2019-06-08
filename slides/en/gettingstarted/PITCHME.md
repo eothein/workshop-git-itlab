@@ -1,5 +1,6 @@
 +++ 
-@[headline](Getting started)
+
+## Getting started
 
 1. Register for an account on github.com.
 2. Download, install and configure git.
@@ -30,12 +31,14 @@ Volg de link en voer de stappen uit.
 
 ### Git basic configuration
 
-@snap[west span-40]
+@snap[west span-60]
 @code[bash zoom-07](assets/src/gettingstarted/config.sh)
 @snapend
 
-@snap[east span-50]
-### Of korter
+@snap[east span-40]
+
+or short 
+
 ```console
 git config --global --edit
 ```
@@ -49,7 +52,7 @@ git config --global --edit
 
 
 +++
-### Controleren of alles juist is
+### Check if everything is correct
 
 ```console
 git config --list
