@@ -27,5 +27,4 @@
 - No restrictions on the available options
 - Instructions are clear and compact
 - Easier to reproduce
-- 
----
+

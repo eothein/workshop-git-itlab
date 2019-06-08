@@ -2,9 +2,9 @@
 
 ## Getting started
 
-1. Register for an account on github.com.
-2. Download, install and configure git.
-3. Configure Git in your terminal.
+1. Register for an account on github.com
+2. Download, install and configure git
+3. Configure Git in your terminal
 
 But first ...
 
