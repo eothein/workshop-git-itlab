@@ -12,7 +12,7 @@ e-quality - jens.buysse@gmail.com
 ---
 @title[Contents]
 
-### *There is more than one way to do it*
+### There is more than one way to do it
 @css[help](What follows are my personal recommendations together with those of Bert Van Vreckem)
 
 ---?include=slides/en/intro/PITCHME.md
@@ -20,8 +20,6 @@ e-quality - jens.buysse@gmail.com
 ---?include=slides/en/clivsgui/PITCHME.md
 
 ---?include=slides/en/gettingstarted/PITCHME.md
-
-
 
 
 # Wat is git - basics?
