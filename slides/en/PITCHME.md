@@ -13,85 +13,57 @@ e-quality - jens.buysse@gmail.com
 @title[Contents]
 
 ### *There is more than one way to do it*
-@css[help](Wat volgt zijn mijn persoonlijke aanbevelingen samen met die van Bert Van Vreckem)
+@css[help](What follows are my personal recommendations together with those of Bert Van Vreckem)
 
 ---?include=slides/en/intro/PITCHME.md
 
+---?include=slides/en/clivsgui/PITCHME.md
 
-
-## CLI vs GUI
-
-+++
-
-@css[tip](Gebruik Git vanop de command line)
-
-+++
-
-Tenminste, totdat je begrijpt wat je doet ...
-
-+++
-
-### Gebruik van GUI
-
-- Verbergt complexiteit
-- Verbergt details
-- Beperkt mogelijkheden
-- Bemoeilijkt troubleshooting
-- **Vaak begrijp je niet wat je aan het doen bent**
-
-+++
-
-### CLI
-
-- Leercurve, juiste commando's leren gaat niet vanzelf
-- Geen beperkingen op mogelijkheden
-- Instructies zijn éénduidig en compact
-- Makkelijker reproduceerbaar
-
----
 
 
 # Getting started
-1. Registreer je voor een account op github.com. 
-2. Download, installeer en configureer git. 
-3. Configureer Git in je terminal.
 
-eerst ...
+1. Register for an account on github.com.
+2. Download, install and configure git.
+3. Configure Git in your terminal.
+
+But first ...
 
 +++ 
 
-### Werk met SSH sleutels
+### Work SSH keys
 
-- Zorg dat Git Bash geïnstalleerd is
-- Maak een SSH sleutelpaar aan (`ssh-keygen`)
-- Registreer publieke sleutel (`~/.ssh/id_rsa.pub`) op Github
+- Make sure Git Bash is installed
+- Create an SSH key pair (`ssh-keygen`)
+- Register public key (`~ / .ssh / id_rsa.pub`) on Github
+
 
 <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
 +++
 
-### Werk met SSH sleutels
+### Work with SSH keys
 
 Volg de link en voer de stappen uit.
 
 <https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/>
 
 
-### Git basisconfiguratie
+### Git basic configuration
 
 ```console
-$ git config --global user.name "VOORNAAM NAAM"
-$ git config --global user.email "VOORNAAM.NAAM@EXAMPLE.COM"
+$ git config --global user.name "Buysse Jens"
+$ git config --global user.email "jens.buysse@gmail.com"
 $ git config --global push.default simple
 ```
 
-of
+or
 
 ```console
 $ git config --global --edit
 ```
 
-Output (mss wat veel in dit geval)
+Output (probably a bit large)
 
 ```
 core.excludesfile=~/.gitignore
@@ -144,7 +116,8 @@ core.precomposeunicode=true
 remote.origin.url=git@github.com:eothein/workshop-git-itlab.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 branch.master.remote=origin
-branch.master.merge=refs/heads/master```
+branch.master.merge=refs/heads/master
+```
 
 +++
 ### Controleren of alles juist is
@@ -156,9 +129,10 @@ branch.master.merge=refs/heads/master```
 
 ### `git status` FTW!
 
-- huidige toestand
-- volgende stap
-- stap terugzetten
+
+- current state
+- next step
+- step back
 
 ---
 # Wat is git - basics?
