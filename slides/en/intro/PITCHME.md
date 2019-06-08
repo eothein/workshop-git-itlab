@@ -4,8 +4,6 @@
 @snapend
 
 @snap[west span-50]
-
-
 - Jens Buysse
 - **ICT profesor** University College Ghent
     - Professional Bachelor of Applied Computer Science
@@ -45,7 +43,7 @@ And on the official "Teacher training to master Git and GitHub"
 
 - [https://education.github.com/teachers/advisors](https://education.github.com/teachers/advisors)
 
- +++
++++
 
 ###I use Git for (almost) everything
 
