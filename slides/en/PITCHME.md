@@ -36,7 +36,7 @@ e-quality - jens.buysse@gmail.com
 @snapend
 
 @snap[east span-50]
-![Jens](assets/jens.jpg)
+![Jens](assets/img/jens.jpg)
 @snapend
 
 +++
