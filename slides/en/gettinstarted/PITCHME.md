@@ -28,11 +28,7 @@ Volg de link en voer de stappen uit.
 
 ### Git basic configuration
 
-```console
-$ git config --global user.name "Buysse Jens"
-$ git config --global user.email "jens.buysse@gmail.com"
-$ git config --global push.default simple
-```
+@code[bash](src/gettingstarted/config.sh)
 
 or
 

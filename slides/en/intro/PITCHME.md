@@ -1,10 +1,9 @@
 +++
 @snap[north]
-## `whoami`
+## `whoami` - Jens Buysse
 @snapend
 
 @snap[west span-50]
-- Jens Buysse
 - **ICT profesor** University College Ghent
     - Professional Bachelor of Applied Computer Science
     - Android, Kotlin, Research techniques in R, internship and bachelor thesis ...
