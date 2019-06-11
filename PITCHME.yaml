@@ -1,8 +1,10 @@
 theme-override : assets/css/PITCHME.css
 transition : none
 code-line-numbers : true
+layout : top-right
 charts : true
 mathjax : TeX-AMS_HTML-full
 title : "Werken met Git & GitHub"
 description : "Werken met Git en Github op een professionele manier"
 footnote : "Werken met git en GitHub" 
+theme : moon

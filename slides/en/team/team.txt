@@ -1,0 +1,39 @@
+# Werken in team
+
++++
+
+## Anderen toegang geven tot je repository
+
+* Klik rechts op **Settings**
+* In het menu links, klik op **Collaborators**
+* Voeg de gebruikersnamen toe van wie toegang moet krijgen
+
++++
+
+## Een project opzetten in GitHub
+
+* Eén persoon doet:
+    * Aanmaken nieuwe repository
+    * Optie voor creëren README + `.gitignore` aanvinken
+    * Teamleden toevoegen
+* Iedereen doet
+    * `git clone https://github.com/USER/PROJECT.git`
+
++++
+
+## Workflow: werken in een team
+
+* Haal laatste revisie binnen: `git pull origin master`
+* Maak wijzigingen: `git add`, `git commit`
+* Nogmaals: `git pull --rebase`
+* Naar centrale repository: `git push origin master`
+
+- `-u` is kort voor `--set-upstream`
+
+
++++
+## Oefening
+
+- Voeg mensen toe aan je repository
+- Voeg naar hartelust bestanden toe aan elkaar's repo
+- Wat loopt er fout en hoe lossen we het op?

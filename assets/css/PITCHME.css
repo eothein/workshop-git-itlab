@@ -14,6 +14,7 @@
 .tip {
   color:gray;
   font-size: 0.6em !important;
+  text-align: justify;
 }
 
 .help {
