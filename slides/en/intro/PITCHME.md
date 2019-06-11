@@ -1,5 +1,4 @@
-+++
-## `whoami` - Jens Buysse
+# `whoami` - Jens Buysse
 
 - **ICT profesor** University College Ghent
     - Professional Bachelor of Applied Computer Science

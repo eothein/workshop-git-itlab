@@ -1,4 +1,4 @@
-## CLI vs GUI
+# CLI vs GUI
 
 +++
 

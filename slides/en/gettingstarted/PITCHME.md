@@ -1,5 +1,5 @@
 
-## Getting started
+# Getting started
 +++ 
 1. Register for an account on github.com
 2. Download, install and configure git

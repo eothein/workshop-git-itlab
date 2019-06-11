@@ -1,4 +1,4 @@
-## Merge vs Rebase
+# Merge vs Rebase
 
 <https://onlywei.github.io/explain-git-with-d3/>
 
@@ -159,5 +159,3 @@ $ git status
 +++
 
 Let's try it!
-
----

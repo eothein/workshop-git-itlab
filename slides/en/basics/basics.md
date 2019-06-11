@@ -1,4 +1,4 @@
-### What is git
+#What is git
 
 +++
 @snap[north span]
@@ -30,7 +30,7 @@ What is git - basics?
 @snapend
 
 +++
-### A * repository * manages the history of your project
+### A *repository* manages the history of your project
 
 * Each project must have its own repository
 
