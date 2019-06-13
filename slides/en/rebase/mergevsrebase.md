@@ -1,4 +1,5 @@
 # Merge vs Rebase
++++
 
 <https://onlywei.github.io/explain-git-with-d3/>
 
@@ -15,18 +16,19 @@ git merge master
 - This creates a new "merge commit" in the feature branch that connects the history of both branches.
 - Merging is fun because it is a non-destructive operation. The existing branches have not been changed in any way.
 
-+++
 +++?image=assets/img/forkedcommit.svg
 ### Merge
 
-Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-
+@snap[south-west]
+@css[tip](Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+@snapend
 
 +++?image=assets/img/merge.svg
 ### Merge
 
-Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
-
+@snap[south-west]
+@css[tip](Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+@snapend
 +++
 ### Rebase
 
@@ -39,19 +41,28 @@ This moves the entire branch at the point of the master, whereby all new commits
 
 +++?image=assets/img/forkedcommit.svg
 ### Rebase
-Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+@snap[south-west]
+@css[tip](Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+@snapend
 
 +++?image=assets/img/rebase.svg
 ### Rebase
 
-Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+@snap[south-west]
+@css[tip](Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+@snapend
 
 +++?image=assets/img/goldenrule.svg
 ### Golden rule of rebase
-The golden rule of git rebase is to never use it in public locations.
 
-Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+@snap[south-east]
+@css[tip](The golden rule of git rebase is to never use it in public locations.)
+@snapend
 
+
+@snap[south-west]
+@css[tip](Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasing))
+@snapend
 
 +++
 
@@ -59,11 +70,11 @@ Resource: [Atlassian](https://www.atlassian.com/git/tutorials/merging-vs-rebasin
 
 ```console
 [Edit files]
-$ git add.
-$ git commit -m "Description of changes"
-$ git pull --rebase
+git add.
+git commit -m "Description of changes"
+git pull --rebase
 [Resolving any conflicts]
-$ git push
+git push
 ```
 
  git pull --rebase = git fetch + rebase
